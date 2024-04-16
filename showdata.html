@@ -17,7 +17,7 @@
         <img src="./img/主页.png" class="icon" alt="" />首页</a
       >
       <a class="active" href="./showdata.html"
-        ><img src="./img/数据统计.png" alt="" class="icon" />实时数据</a
+        ><img src="./img/数据统计.png" alt="" class="icon" />线路调度</a
       >
       <a href="./user.html"
         ><img src="./img/用户管理.png" alt="" class="icon" />用户管理</a
@@ -40,7 +40,7 @@
           <img src="./img/预设人员.png" alt="" class="icon3" />
         </div>
         <div class="dataw">
-          <h1>38</h1>
+          <h1>30</h1>
           <div class="data-font">等待人数</div>
         </div>
       </div>
@@ -49,7 +49,7 @@
           <img src="./img/公交2.png" alt="" class="icon3" />
         </div>
         <div class="dataw">
-          <h1>5/11</h1>
+          <h1>4/6</h1>
           <div class="data-font">在线车辆</div>
         </div>
       </div>
@@ -58,7 +58,7 @@
           <img src="./img/司机排班.png" alt="" class="icon3" />
         </div>
         <div class="dataw">
-          <h1>6/9</h1>
+          <h1>4/7</h1>
           <div class="data-font">出车排班</div>
         </div>
       </div>
@@ -67,8 +67,8 @@
           <img src="./img/16global.png" alt="" class="icon3" />
         </div>
         <div class="dataw">
-          <h1>在线</h1>
-          <div class="data-font">环境监测</div>
+          <h1>12</h1>
+          <div class="data-font">今日完成</div>
         </div>
       </div>
     </div>
@@ -78,59 +78,61 @@
       <div class="datapic3">
         <table>
           <caption>
-            后端数据流
+            线路排班（Run_log）
           </caption>
           <!-- S002	52	21	200	26.1154	177.3335	2023-06-22 04:45:55 -->
           <thead>
             <tr>
-              <th>devid</th>
-              <th>hum</th>
-              <th>tem</th>
-              <th>rain</th>
-              <th>north</th>
-              <th>east</th>
-              <th>datatime</th>
+              <th>记录ID</th>
+              <th>线路ID</th>
+              <th>驾驶员ID</th>
+              <th>车辆ID</th>
+              <th>预计发车时间</th>
+              <th>班次状态</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th>S002</th>
-              <th>52</th>
-              <th>21</th>
-              <th>200</th>
-              <th>26.1154</th>
-              <th>177.3335</th>
-              <th>2023-06-22 04:45:55</th>
+              <th>145</th>
+              <th>40001</th>
+              <th>30001</th>
+              <th>10001</th>
+              <th>2024-04-17 10:45:00.00</th>
+              <th>
+                <a href="#" class="myButton2">待发车</a>
+              </th>
             </tr>
             <tr>
-              <th>S002</th>
-              <th>52</th>
-              <th>21</th>
-              <th>200</th>
-              <th>26.1154</th>
-              <th>177.3335</th>
-              <th>2023-06-22 04:45:55</th>
+              <th>144</th>
+              <th>40001</th>
+              <th>30002</th>
+              <th>10002</th>
+              <th>2024-04-17 10:40:00.00</th>
+              <th>
+                <a href="#" class="myButton2">运行中</a>
+              </th>
             </tr>
             <tr>
-              <th>S002</th>
-              <th>52</th>
-              <th>21</th>
-              <th>200</th>
-              <th>26.1154</th>
-              <th>177.3335</th>
-              <th>2023-06-22 04:45:55</th>
+              <th>143</th>
+              <th>40001</th>
+              <th>30003</th>
+              <th>10003</th>
+              <th>2024-04-17 10:35:00.00</th>
+              <th>
+                <a href="#" class="myButton">运行结束</a>
+              </th>
             </tr>
             <tr>
-              <th>S002</th>
-              <th>52</th>
-              <th>21</th>
-              <th>200</th>
-              <th>26.1154</th>
-              <th>177.3335</th>
-              <th>2023-06-22 04:45:55</th>
+              <th>142</th>
+              <th>40001</th>
+              <th>30005</th>
+              <th>10004</th>
+              <th>2024-04-17 10:30:00.00</th>
+              <th>
+                <a href="#" class="myButton">运行结束</a>
+              </th>
             </tr>
             <tr>
-              <th>...</th>
               <th>...</th>
               <th>...</th>
               <th>...</th>
@@ -141,7 +143,7 @@
           </tbody>
           <tfoot>
             <tr>
-              <td colspan="7">数据总条数：4</td>
+              <td colspan="7">数据总条数：145</td>
             </tr>
           </tfoot>
         </table>

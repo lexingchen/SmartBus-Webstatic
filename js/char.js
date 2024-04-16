@@ -1,26 +1,27 @@
 const ctx = document.getElementById("myChart");
 const labels = [
-  "一月份",
-  "二月份",
-  "三月份",
-  "四月份",
-  "五月份",
-  "六月份",
-  "七月份",
+  "6:00",
+  "8:00",
+  "10:00",
+  "12:00",
+  "14:00",
+  "16:00",
+  "18:00",
+  "20:00",
 ]; // 设置 X 轴上对应的标签
 const data = {
   labels: labels,
   datasets: [
     {
-      label: "总人数",
-      data: [65, 59, 80, 81, 56, 55, 40],
+      label: "线路等站人数",
+      data: [10, 33, 25, 40, 51, 15, 30, 21],
       fill: false,
       borderColor: "rgb(75, 192, 192)",
       tension: 0.1,
     },
     {
-      label: "滞留",
-      data: [85, 79, 100, 101, 76, 75, 60],
+      label: "线路运输人数",
+      data: [10, 32, 25, 36, 45, 12, 20, 20],
       fill: false,
       borderColor: "rgb(175, 92, 92)",
       tension: 0,
@@ -41,8 +42,8 @@ const data2 = {
   labels: labels,
   datasets: [
     {
-      label: "调度预期",
-      data: [65, 59, 80, 81, 56, 55, 40],
+      label: "在线车辆",
+      data: [3, 3, 4, 6, 3, 3, 4, 1],
       backgroundColor: [
         // 设置每个柱形图的背景颜色
         "rgba(75, 192, 192, 0.2)",
@@ -50,8 +51,8 @@ const data2 = {
       borderWidth: 1, // 设置线条宽度
     },
     {
-      label: "运输总量",
-      data: [85, 79, 100, 101, 76, 75, 60],
+      label: "在线驾驶员",
+      data: [2, 4, 4, 6, 3, 3, 5, 1],
       backgroundColor: [
         // 设置每个柱形图的背景颜色
         "rgba(255, 99, 132, 0.2)",

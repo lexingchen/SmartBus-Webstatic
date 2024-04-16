@@ -18,7 +18,7 @@
         <img src="./img/主页.png" class="icon" alt="" />首页</a
       >
       <a href="./showdata.html"
-        ><img src="./img/数据统计.png" alt="" class="icon" />实时数据</a
+        ><img src="./img/数据统计.png" alt="" class="icon" />线路调度</a
       >
       <a href="./user.html"
         ><img src="./img/用户管理.png" alt="" class="icon" />用户管理</a
@@ -42,7 +42,7 @@
           <img src="./img/公交2.png" alt="" class="icon3" />
         </div>
         <div class="dataw">
-          <h1>5/11</h1>
+          <h1>4/6</h1>
           <div class="data-font">在线车辆</div>
         </div>
       </div>
@@ -51,8 +51,8 @@
           <img src="./img/运行.png" alt="" class="icon3" />
         </div>
         <div class="dataw">
-          <h1>5</h1>
-          <div class="data-font">营运车辆</div>
+          <h1>7</h1>
+          <div class="data-font">园区车辆</div>
         </div>
       </div>
       <div class="datapic">
@@ -60,7 +60,7 @@
           <img src="./img/车辆故障.png" alt="" class="icon3" />
         </div>
         <div class="dataw">
-          <h1>0</h1>
+          <h1>1</h1>
           <div class="data-font">故障报修</div>
         </div>
       </div>
@@ -69,7 +69,7 @@
           <img src="./img/实时日志.png" alt="" class="icon3" />
         </div>
         <div class="dataw">
-          <h1>12</h1>
+          <h1>0</h1>
           <div class="data-font">驾驶日志</div>
         </div>
       </div>
@@ -86,59 +86,71 @@
           <!-- S002	52	21	200	26.1154	177.3335	2023-06-22 04:45:55 -->
           <thead>
             <tr>
-              <th>bid</th>
-              <th>bnum</th>
-              <th>bbody</th>
-              <th>uroal</th>
-              <th>bstate</th>
-              <th>bcharge</th>
-              <th>operate</th>
+              <th>车辆编号</th>
+              <th>牌照信息</th>
+              <th>在线状态</th>
+              <th>车辆型号</th>
+              <th>车辆位置</th>
+              <th>载客数量</th>
+              <th>数据管理</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th>b001</th>
-              <th>明院-001A</th>
-              <th>正常</th>
+              <th>10001</th>
+              <th>明-10001</th>
+              <th>营运</th>
+              <th>8</th>
+              <th>26.1148N117.3334E</th>
+              <th>0</th>
+              <th>
+                <a href="#" class="myButton">删除</a>
+                <a href="#" class="myButton2">修改</a>
+              </th>
+            </tr>
+            <tr>
+              <th>10002</th>
+              <th>明-10002</th>
+              <th>营运</th>
+              <th>8</th>
+              <th>26.1149N117.3344E</th>
+              <th>6</th>
+              <th>
+                <a href="#" class="myButton">删除</a>
+                <a href="#" class="myButton2">修改</a>
+              </th>
+            </tr>
+            <tr>
+              <th>10003</th>
+              <th>明-10003</th>
+              <th>空闲</th>
               <th>16</th>
-              <th>在线</th>
-              <th>60%</th>
+              <th>26.1148N117.3334E</th>
+              <th>0</th>
               <th>
                 <a href="#" class="myButton">删除</a>
                 <a href="#" class="myButton2">修改</a>
               </th>
             </tr>
             <tr>
-              <th>b002</th>
-              <th>明院-002B</th>
-              <th>正常</th>
-              <th>20</th>
-              <th>运行</th>
-              <th>90%</th>
-              <th>
-                <a href="#" class="myButton">删除</a>
-                <a href="#" class="myButton2">修改</a>
-              </th>
-            </tr>
-            <tr>
-              <th>b003</th>
-              <th>明院-003A</th>
+              <th>10004</th>
+              <th>明-10004</th>
               <th>故障</th>
-              <th>16</th>
-              <th>离线</th>
-              <th>20%</th>
+              <th>20</th>
+              <th>null</th>
+              <th>0</th>
               <th>
                 <a href="#" class="myButton">删除</a>
                 <a href="#" class="myButton2">修改</a>
               </th>
             </tr>
             <tr>
-              <th>b004</th>
-              <th>明院-004A</th>
-              <th>正常</th>
-              <th>12</th>
-              <th>在线</th>
-              <th>100%</th>
+              <th>10005</th>
+              <th>明-10005</th>
+              <th>空闲</th>
+              <th>16</th>
+              <th>null</th>
+              <th>0</th>
               <th>
                 <a href="#" class="myButton">删除</a>
                 <a href="#" class="myButton2">修改</a>
@@ -147,7 +159,7 @@
           </tbody>
           <tfoot>
             <tr>
-              <td colspan="7">数据总条数：4</td>
+              <td colspan="7">数据总条数：7</td>
             </tr>
           </tfoot>
         </table>
